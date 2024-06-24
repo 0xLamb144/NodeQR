@@ -19,7 +19,7 @@ inquirer
         // the QRCode is generated using the qr.image method i.e https://www.npmjs.com/package/qr-image
         const qr_svg = qr.image(url);
         // A png file is created, containg the URL as an QR-code image.
-        qr_svg.pipe(fs.createWriteStream('qr_img.png'));
+        qr_svg.pipe(fs.createWriteStream('nodeQR_image.png'));
     })
     .catch((error) => {
         if (error.isTtyError) {
